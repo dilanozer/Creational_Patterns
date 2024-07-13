@@ -1,14 +1,16 @@
-﻿GarantiBank? garantiBank = BankCreator.Create(BankType.Garanti) as GarantiBank;
-HalkBank? halkBank = BankCreator.Create(BankType.Halkbank) as HalkBank;
-VakifBank? vakifBank = BankCreator.Create(BankType.Vakifbank) as VakifBank;
+﻿using System.Reflection;
 
-GarantiBank? garantiBank2 = BankCreator.Create(BankType.Garanti) as GarantiBank;
-HalkBank? halkBank2 = BankCreator.Create(BankType.Halkbank) as HalkBank;
-VakifBank? vakifBank2 = BankCreator.Create(BankType.Vakifbank) as VakifBank;
+GarantiBank? garantiBank = BankCreator.Create(BankType.GarantiBank) as GarantiBank;
+HalkBank? halkBank = BankCreator.Create(BankType.HalkBank) as HalkBank;
+VakifBank? vakifBank = BankCreator.Create(BankType.VakifBank) as VakifBank;
 
-GarantiBank? garantiBank3 = BankCreator.Create(BankType.Garanti) as GarantiBank;
-HalkBank? halkBank3 = BankCreator.Create(BankType.Halkbank) as HalkBank;
-VakifBank? vakifBank3 = BankCreator.Create(BankType.Vakifbank) as VakifBank;
+GarantiBank? garantiBank2 = BankCreator.Create(BankType.GarantiBank) as GarantiBank;
+HalkBank? halkBank2 = BankCreator.Create(BankType.HalkBank) as HalkBank;
+VakifBank? vakifBank2 = BankCreator.Create(BankType.VakifBank) as VakifBank;
+
+GarantiBank? garantiBank3 = BankCreator.Create(BankType.GarantiBank) as GarantiBank;
+HalkBank? halkBank3 = BankCreator.Create(BankType.HalkBank) as HalkBank;
+VakifBank? vakifBank3 = BankCreator.Create(BankType.VakifBank) as VakifBank;
 
 #region Abstract Product
 
@@ -24,6 +26,8 @@ class GarantiBank : IBank
 {
     string _userCode, _password;
 
+    // constructor private yapilarak developerlarin product nesnelerinden new operatoru ile nesne
+    // uretmesini engeller
     GarantiBank(string userCode, string password)
     {
         Console.WriteLine($"{nameof(GarantiBank)} nesnesi olusturuldu");
@@ -31,13 +35,16 @@ class GarantiBank : IBank
         _password = password;
     }
 
-    // Product nesnesini singleton yapma
+    // Product nesnesini singleton yapma:
 
+    // Nesne uretiminin sorumlulugu factoryde degildir, sinifin kendisindedir
+    
     // Factory sinifindan yapilacak olan taleplerde, ilkinde nesne uretilir ve
     // sonrasinda olan taleplerde ayni Product nesneleri kullanilmaya devam edecek
-    static GarantiBank() => _garantiBank = new("ayse", "123");
+    static GarantiBank() => _garantiBank = new("ayse", "123"); // nesne uretimi
     static GarantiBank _garantiBank;
-    static public GarantiBank GetInstance => _garantiBank;
+    // client in nesne talebinde bulunabilmesi icin member tanimlama
+    static public GarantiBank GetInstance => _garantiBank; 
 
     public void ConnectGaranti() => Console.WriteLine($"{nameof(GarantiBank)} - Connected");
 
@@ -48,6 +55,8 @@ class HalkBank : IBank
 {
     string _userCode, _password;
 
+    // constructor private yapilarak developerlarin product nesnelerinden new operatoru ile nesne
+    // uretmesini engeller
     HalkBank(string userCode)
     {
         Console.WriteLine($"{nameof(HalkBank)} nesnesi olusturuldu");
@@ -79,6 +88,8 @@ class VakifBank : IBank
 
     public bool isAuthentication { get; set; }
 
+    // constructor private yapilarak developerlarin product nesnelerinden new operatoru ile nesne
+    // uretmesini engeller
     VakifBank(CredentialVakifBank credential, string password)
     {
         Console.WriteLine($"{nameof(VakifBank)} nesnesi olusturuldu");
@@ -120,23 +131,24 @@ interface IBankFactory
 class GarantiBankFactory : IBankFactory
 {
     // singleton
-    GarantiBankFactory() { }
-    static GarantiBankFactory _garantiFactory;
-    static GarantiBankFactory() => _garantiFactory = new();
-    static public GarantiBankFactory GetInstance => _garantiFactory;
+    public GarantiBankFactory() { } // constructor i private ayarlama
+    static GarantiBankFactory() => _garantiBankFactory = new(); // factory i doldurma
+    static GarantiBankFactory _garantiBankFactory; // static olarak factory sinifindan referans alma
+    // bu referans noktasini disariya kontrollu bir sekilde acmayi saglayacak static property
+    static public GarantiBankFactory GetInstance => _garantiBankFactory;  
 
     public IBank CreateInstance()
     {
-        GarantiBank garanti = GarantiBank.GetInstance;
-        garanti.ConnectGaranti();
-        return garanti;
+        GarantiBank garantiBank = GarantiBank.GetInstance;
+        garantiBank.ConnectGaranti();
+        return garantiBank;
     }
 }
 
 class HalkBankFactory : IBankFactory
 {
     // singleton
-    HalkBankFactory() { }
+    public HalkBankFactory() { }
     static HalkBankFactory() => _halkBankFactory = new();
     static HalkBankFactory _halkBankFactory;
     static public HalkBankFactory GetInstance => _halkBankFactory;
@@ -152,7 +164,7 @@ class HalkBankFactory : IBankFactory
 class VakifBankFactory : IBankFactory
 {
     // singleton
-    VakifBankFactory() { }
+    public VakifBankFactory() { }
     static VakifBankFactory() => _vakifBankFactory = new();
     static VakifBankFactory _vakifBankFactory;
     static public VakifBankFactory GetInstance => _vakifBankFactory;
@@ -170,21 +182,32 @@ class VakifBankFactory : IBankFactory
 
 enum BankType
 {
-    Garanti, Halkbank, Vakifbank
+    GarantiBank, HalkBank, VakifBank
 }
 
 class BankCreator
 {
     static public IBank Create(BankType bankType)
     {
-        IBankFactory _bankFactory = bankType switch
-        {
-            BankType.Vakifbank => VakifBankFactory.GetInstance,
-            BankType.Halkbank => HalkBankFactory.GetInstance,
-            BankType.Garanti => GarantiBankFactory.GetInstance
-        };
+        //IBankFactory _bankFactory = bankType switch
+        //{
+        //    BankType.Vakifbank => VakifBankFactory.GetInstance,
+        //    BankType.Halkbank => HalkBankFactory.GetInstance,
+        //    BankType.Garanti => GarantiBankFactory.GetInstance
+        //};
 
-        return _bankFactory.CreateInstance();
+        //return _bankFactory.CreateInstance();
+
+        // Sorun:
+        // Creator sinifi, factory lere bagimlilik sergiler. Reflection calismasi ile
+        // bu bagimliligi kaldirabiliriz
+
+        // Cozum:
+        // 
+        string factory = $"{bankType.ToString()}Factory";
+        Type? type = Assembly.GetExecutingAssembly().GetType(factory);
+        IBankFactory? bankFactory = Activator.CreateInstance(type) as IBankFactory;
+        return bankFactory.CreateInstance();
     }
 }
 #endregion
