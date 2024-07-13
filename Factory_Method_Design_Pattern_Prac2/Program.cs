@@ -2,6 +2,14 @@
 HalkBank? halkBank = BankCreator.Create(BankType.Halkbank) as HalkBank;
 VakifBank? vakifBank = BankCreator.Create(BankType.Vakifbank) as VakifBank;
 
+GarantiBank? garantiBank2 = BankCreator.Create(BankType.Garanti) as GarantiBank;
+HalkBank? halkBank2 = BankCreator.Create(BankType.Halkbank) as HalkBank;
+VakifBank? vakifBank2 = BankCreator.Create(BankType.Vakifbank) as VakifBank;
+
+GarantiBank? garantiBank3 = BankCreator.Create(BankType.Garanti) as GarantiBank;
+HalkBank? halkBank3 = BankCreator.Create(BankType.Halkbank) as HalkBank;
+VakifBank? vakifBank3 = BankCreator.Create(BankType.Vakifbank) as VakifBank;
+
 #region Abstract Product
 
 interface IBank
@@ -16,12 +24,20 @@ class GarantiBank : IBank
 {
     string _userCode, _password;
 
-    public GarantiBank(string userCode, string password)
+    GarantiBank(string userCode, string password)
     {
         Console.WriteLine($"{nameof(GarantiBank)} nesnesi olusturuldu");
         _userCode = userCode;
         _password = password;
     }
+
+    // Product nesnesini singleton yapma
+
+    // Factory sinifindan yapilacak olan taleplerde, ilkinde nesne uretilir ve
+    // sonrasinda olan taleplerde ayni Product nesneleri kullanilmaya devam edecek
+    static GarantiBank() => _garantiBank = new("ayse", "123");
+    static GarantiBank _garantiBank;
+    static public GarantiBank GetInstance => _garantiBank;
 
     public void ConnectGaranti() => Console.WriteLine($"{nameof(GarantiBank)} - Connected");
 
@@ -32,11 +48,19 @@ class HalkBank : IBank
 {
     string _userCode, _password;
 
-    public HalkBank(string userCode)
+    HalkBank(string userCode)
     {
         Console.WriteLine($"{nameof(HalkBank)} nesnesi olusturuldu");
         _userCode = userCode;
     }
+
+    // Product nesnesini singleton yapma
+
+    // Factory sinifindan yapilacak olan taleplerde, ilkinde nesne uretilir ve
+    // sonrasinda olan taleplerde ayni Product nesneleri kullanilmaya devam edecek
+    static HalkBank() => _halkBank = new("ayse");
+    static HalkBank _halkBank;
+    static public HalkBank GetInstance => _halkBank;
 
     public string Password { set => _password = value; }
 
@@ -55,13 +79,21 @@ class VakifBank : IBank
 
     public bool isAuthentication { get; set; }
 
-    public VakifBank(CredentialVakifBank credential, string password)
+    VakifBank(CredentialVakifBank credential, string password)
     {
         Console.WriteLine($"{nameof(VakifBank)} nesnesi olusturuldu");
         _userCode = credential.UserCode;
         _email = credential.Mail;
         _password = password;
     }
+
+    // product nesnesini singleton yapma
+
+    // Factory sinifindan yapilacak olan taleplerde, ilkinde nesne uretilir ve
+    // sonrasinda olan taleplerde ayni Product nesneleri kullanilmaya devam edecek
+    static VakifBank() => _vakifBank = new(new() { Mail = "ayse@gmail.com", UserCode = "ayse" }, "123");
+    static VakifBank _vakifBank;
+    static public VakifBank GetInstance => _vakifBank;
 
     public void ValidateCredential()
     {
@@ -85,11 +117,17 @@ interface IBankFactory
 
 #region Concrete Factories
 
-class GarantiFactory : IBankFactory
+class GarantiBankFactory : IBankFactory
 {
+    // singleton
+    GarantiBankFactory() { }
+    static GarantiBankFactory _garantiFactory;
+    static GarantiBankFactory() => _garantiFactory = new();
+    static public GarantiBankFactory GetInstance => _garantiFactory;
+
     public IBank CreateInstance()
     {
-        GarantiBank garanti = new("ayse", "123");
+        GarantiBank garanti = GarantiBank.GetInstance;
         garanti.ConnectGaranti();
         return garanti;
     }
@@ -97,9 +135,15 @@ class GarantiFactory : IBankFactory
 
 class HalkBankFactory : IBankFactory
 {
+    // singleton
+    HalkBankFactory() { }
+    static HalkBankFactory() => _halkBankFactory = new();
+    static HalkBankFactory _halkBankFactory;
+    static public HalkBankFactory GetInstance => _halkBankFactory;
+
     public IBank CreateInstance()
     {
-        HalkBank halkBank = new("ayse");
+        HalkBank halkBank = HalkBank.GetInstance;
         halkBank.Password = "123";
         return halkBank;
     }
@@ -107,9 +151,15 @@ class HalkBankFactory : IBankFactory
 
 class VakifBankFactory : IBankFactory
 {
+    // singleton
+    VakifBankFactory() { }
+    static VakifBankFactory() => _vakifBankFactory = new();
+    static VakifBankFactory _vakifBankFactory;
+    static public VakifBankFactory GetInstance => _vakifBankFactory;
+
     public IBank CreateInstance()
     {
-        VakifBank vakifBank = new(new() { Mail = "ayse@gmail.com", UserCode = "ayse" }, "123");
+        VakifBank vakifBank = VakifBank.GetInstance;
         vakifBank.ValidateCredential();
         return vakifBank;
     }
@@ -129,9 +179,9 @@ class BankCreator
     {
         IBankFactory _bankFactory = bankType switch
         {
-            BankType.Vakifbank => new VakifBankFactory(),
-            BankType.Halkbank => new HalkBankFactory(),
-            BankType.Garanti => new GarantiFactory()
+            BankType.Vakifbank => VakifBankFactory.GetInstance,
+            BankType.Halkbank => HalkBankFactory.GetInstance,
+            BankType.Garanti => GarantiBankFactory.GetInstance
         };
 
         return _bankFactory.CreateInstance();
