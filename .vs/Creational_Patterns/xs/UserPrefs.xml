@@ -1,6 +1,24 @@
-﻿<Properties StartupConfiguration="{8D14F7B5-3F6D-45A6-A880-BFA3A8D8D68A}|Default">
+﻿<Properties StartupConfiguration="{D1AD6648-77FF-415C-A97E-AABC0B99D0A7}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Creational_Patterns" expanded="True" selected="True">
+            <Node name="Factory_Design_Pattern" expanded="True" />
+            <Node name="Factory_Method_Design_Pattern" expanded="True" />
+            <Node name="Factory_Method_Design_Pattern_Prac2" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

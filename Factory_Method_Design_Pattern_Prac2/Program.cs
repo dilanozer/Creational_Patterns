@@ -203,11 +203,16 @@ class BankCreator
         // bu bagimliligi kaldirabiliriz
 
         // Cozum:
-        // 
-        string factory = $"{bankType.ToString()}Factory";
+        // Reflection ile instance lari tek elden uretme
+        string factory = $"{bankType.ToString()}Factory"; // gelen sinifin ismini ayarlama
+        // mevcut assembly i elde edip, factory ismine karsilik gelen type i yakalama
         Type? type = Assembly.GetExecutingAssembly().GetType(factory);
+        // elde edilen type a karsilik instance uretme
         IBankFactory? bankFactory = Activator.CreateInstance(type) as IBankFactory;
         return bankFactory.CreateInstance();
+
+        // CreateInstance() -> beklenilen product i geriye doner
+        // Activator.CreateInstance(type) -> verilen tipe karsilik instance donme
     }
 }
 #endregion
