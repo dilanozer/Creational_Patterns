@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dilanozer/Projects/Creational_Patterns/Factory_Method_Design_Pattern/Factory_Method_Design_Pattern.csproj": {}
+    "/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern/Abstract_Factory_Design_Pattern.csproj": {}
   },
   "projects": {
-    "/Users/dilanozer/Projects/Creational_Patterns/Factory_Method_Design_Pattern/Factory_Method_Design_Pattern.csproj": {
+    "/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern/Abstract_Factory_Design_Pattern.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dilanozer/Projects/Creational_Patterns/Factory_Method_Design_Pattern/Factory_Method_Design_Pattern.csproj",
-        "projectName": "Factory_Method_Design_Pattern",
-        "projectPath": "/Users/dilanozer/Projects/Creational_Patterns/Factory_Method_Design_Pattern/Factory_Method_Design_Pattern.csproj",
+        "projectUniqueName": "/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern/Abstract_Factory_Design_Pattern.csproj",
+        "projectName": "Abstract_Factory_Design_Pattern",
+        "projectPath": "/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern/Abstract_Factory_Design_Pattern.csproj",
         "packagesPath": "/Users/dilanozer/.nuget/packages/",
-        "outputPath": "/Users/dilanozer/Projects/Creational_Patterns/Factory_Method_Design_Pattern/obj/",
+        "outputPath": "/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dilanozer/.nuget/NuGet/NuGet.Config"
