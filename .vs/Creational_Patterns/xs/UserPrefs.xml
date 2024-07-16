@@ -1,11 +1,5 @@
 ﻿<Properties StartupConfiguration="{D1AD6648-77FF-415C-A97E-AABC0B99D0A7}|Default">
-  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern FirstBuild="True" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Abstract_Factory_Design_Pattern/Program.cs">
     <Files>
       <File FileName="Abstract_Factory_Design_Pattern/Program.cs" Line="15" Column="10" />
@@ -22,7 +16,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>

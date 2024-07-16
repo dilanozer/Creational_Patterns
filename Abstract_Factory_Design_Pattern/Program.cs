@@ -1,7 +1,8 @@
 ﻿ComputerCreator creator = new();
 
-Computer asus =  creator.CreateComputer(new AsusFactory());
-Computer toshiba = creator.CreateComputer(new ToshibaFactory());
+Computer asus =  creator.CreateComputer(ComputerType.Asus);
+Computer toshiba = creator.CreateComputer(ComputerType.Toshiba);
+Computer msi = creator.CreateComputer(ComputerType.MSI);
 
 // elde edilecek nesne
 class Computer
@@ -105,14 +106,29 @@ class MSIFactory : IComputerFactory
 
 #region Creator
 
+enum ComputerType
+{
+    Asus,
+    Toshiba,
+    MSI
+}
+
 class ComputerCreator
 {
     ICPU _cpu;
     IRAM _ram;
     IVideoCard _videoCard;
 
-    public Computer CreateComputer(IComputerFactory computerFactory)
+    // Factory Method Design Pattern
+    public Computer CreateComputer(ComputerType computerType)
     {
+        IComputerFactory computerFactory = computerType switch
+        {
+            ComputerType.Asus => new AsusFactory(),
+            ComputerType.Toshiba => new ToshibaFactory(),
+            ComputerType.MSI => new MSIFactory()
+        };
+
         _cpu = computerFactory.CreateCPU();
         _ram = computerFactory.CreateRAM();
         _videoCard = computerFactory.CreateVideoCard();
