@@ -1,57 +1,44 @@
+"use strict";
 // Concrete Product
-var ASecurity = /** @class */ (function () {
-    function ASecurity() {
-        console.log("ASecurity nesnesi olusturuldu");
+class ASecurity {
+    constructor() {
+        console.log(`ASecurity nesnesi olusturuldu`);
     }
-    return ASecurity;
-}());
+}
 // Concrete Product
-var BSecurity = /** @class */ (function () {
-    function BSecurity() {
-        console.log("BSecurity nesnesi olusturuldu");
+class BSecurity {
+    constructor() {
+        console.log(`BSecurity nesnesi olusturuldu`);
     }
-    return BSecurity;
-}());
+}
 // Concrete Product
-var CSecurity = /** @class */ (function () {
-    function CSecurity() {
-        console.log("CSecurity nesnesi olusturuldu");
+class CSecurity {
+    constructor() {
+        console.log(`CSecurity nesnesi olusturuldu`);
     }
-    return CSecurity;
-}());
+}
 // Concrete Factory
-var ASecurityFactory = /** @class */ (function () {
-    function ASecurityFactory() {
-    }
-    ASecurityFactory.prototype.createInstance = function () {
+class ASecurityFactory {
+    createInstance() {
         return new ASecurity();
-    };
-    return ASecurityFactory;
-}());
-// Concrete Factory
-var BSecurityFactory = /** @class */ (function () {
-    function BSecurityFactory() {
     }
-    BSecurityFactory.prototype.createInstance = function () {
+}
+// Concrete Factory
+class BSecurityFactory {
+    createInstance() {
         return new BSecurity();
-    };
-    return BSecurityFactory;
-}());
+    }
+}
 // Concrete Factory
-var CSecurityFactory = /** @class */ (function () {
-    function CSecurityFactory() {
-    }
-    CSecurityFactory.prototype.createInstance = function () {
+class CSecurityFactory {
+    createInstance() {
         return new CSecurity();
-    };
-    return CSecurityFactory;
-}());
-// Creator
-var SecurityCreator = /** @class */ (function () {
-    function SecurityCreator() {
     }
-    SecurityCreator.create = function (securityType) {
-        var securityFactory = null;
+}
+// Creator
+class SecurityCreator {
+    static create(securityType) {
+        let securityFactory = null;
         switch (securityType) {
             case SecurityType.A:
                 securityFactory = new ASecurityFactory();
@@ -64,15 +51,14 @@ var SecurityCreator = /** @class */ (function () {
                 break;
         }
         return securityFactory.createInstance();
-    };
-    return SecurityCreator;
-}());
+    }
+}
 var SecurityType;
 (function (SecurityType) {
     SecurityType[SecurityType["A"] = 0] = "A";
     SecurityType[SecurityType["B"] = 1] = "B";
     SecurityType[SecurityType["C"] = 2] = "C";
 })(SecurityType || (SecurityType = {}));
-var a1 = SecurityCreator.create(SecurityType.A);
-var b1 = SecurityCreator.create(SecurityType.B);
-var c1 = SecurityCreator.create(SecurityType.C);
+const a1 = SecurityCreator.create(SecurityType.A);
+const b1 = SecurityCreator.create(SecurityType.B);
+const c1 = SecurityCreator.create(SecurityType.C);

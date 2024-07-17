@@ -1,26 +1,32 @@
-﻿<Properties StartupConfiguration="{D1AD6648-77FF-415C-A97E-AABC0B99D0A7}|Default">
+﻿<Properties StartupConfiguration="{78230D1D-2340-4FB7-AF78-70AD8D37C0BE}|Default">
   <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Abstract_Factory_Design_Pattern/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs">
     <Files>
-      <File FileName="Abstract_Factory_Design_Pattern/Program.cs" Line="122" Column="37" />
+      <File FileName="Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" Line="96" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Creational_Patterns" expanded="True">
-            <Node name="Abstract_Factory_Design_Pattern" expanded="True" />
+            <Node name="Abstract_Factory_Design_Pattern_CSharp_Example_2">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example__2 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example__2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" relfile="Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" line="7" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
