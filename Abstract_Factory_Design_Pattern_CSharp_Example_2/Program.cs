@@ -93,7 +93,7 @@ abstract class DatabaseFactory
 }
 
 #endregion
-
+ 
 #region Concrete Factory
 
 class MsSqlDatabaseFactory : DatabaseFactory

@@ -1,0 +1,15 @@
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/bin/Debug/net7.0/Prototype_Design_Pattern
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/bin/Debug/net7.0/Prototype_Design_Pattern.deps.json
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/bin/Debug/net7.0/Prototype_Design_Pattern.runtimeconfig.json
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/bin/Debug/net7.0/Prototype_Design_Pattern.dll
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/bin/Debug/net7.0/Prototype_Design_Pattern.pdb
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.csproj.AssemblyReference.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.AssemblyInfoInputs.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.AssemblyInfo.cs
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.csproj.CoreCompileInputs.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.dll
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/refint/Prototype_Design_Pattern.dll
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.pdb
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/Prototype_Design_Pattern.genruntimeconfig.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern/obj/Debug/net7.0/ref/Prototype_Design_Pattern.dll
