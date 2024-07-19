@@ -1,25 +1,16 @@
-﻿// 1.YONTEM -> Clone metodunu barindiran Abstract Prototype bulunur
+﻿// 2.YONTEM -> Abstract Prototype olusturmana gerek yok, bu gorevi IClonable ustlendi
 
-Person person1 = new("Dilan", "Ozer", Department.C, 100, 10);
-// Person person2 = new("Ahmet", "Ozer", Department.C, 100, 10);
+Person person1 = new("Fatma", "Ozer", Department.A, 2500, 500);
 
-Person person2 = person1.Clone();
-person2.Name = "Ahmet";
+Person person2 = (Person)person1.Clone();
+person2.Name = "Ayse";
+person2.Salary = 1000;
 
 Console.WriteLine();
 
-#region Abstract Prototype
-
-interface IPersonCloneable
-{
-    Person Clone();
-}
-
-#endregion
-
 #region Concrete Prototype
 
-class Person : IPersonCloneable
+class Person : ICloneable
 {
     public Person(string name, string surname, Department department, int salary, int premium)
     {
@@ -38,9 +29,10 @@ class Person : IPersonCloneable
     public int Salary { get; set; }
     public int Premium { get; set; }
 
-    public Person Clone()
+    public object Clone()
     {
-        return (Person)base.MemberwiseClone();
+        // direkt object turunde donebilirsin
+        return base.MemberwiseClone();
     }
 }
 
@@ -50,6 +42,8 @@ enum Department
 }
 
 #endregion
+
+
 
 
 

@@ -1,0 +1,15 @@
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/bin/Debug/net7.0/Prototype_Design_Pattern_Prac2
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/bin/Debug/net7.0/Prototype_Design_Pattern_Prac2.deps.json
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/bin/Debug/net7.0/Prototype_Design_Pattern_Prac2.runtimeconfig.json
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/bin/Debug/net7.0/Prototype_Design_Pattern_Prac2.dll
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/bin/Debug/net7.0/Prototype_Design_Pattern_Prac2.pdb
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.csproj.AssemblyReference.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.AssemblyInfoInputs.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.AssemblyInfo.cs
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.csproj.CoreCompileInputs.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.dll
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/refint/Prototype_Design_Pattern_Prac2.dll
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.pdb
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/Prototype_Design_Pattern_Prac2.genruntimeconfig.cache
+/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/obj/Debug/net7.0/ref/Prototype_Design_Pattern_Prac2.dll
