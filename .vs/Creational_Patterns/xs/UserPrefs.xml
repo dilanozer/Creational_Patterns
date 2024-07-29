@@ -1,14 +1,16 @@
-﻿<Properties StartupConfiguration="{F7C89BAA-00A4-4D15-B5A5-64D2B658571E}|Default">
-  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Singleton__Design__Pattern FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern FirstBuild="True" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Prototype__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{EAC7B142-6C35-4BF5-9259-917F8F278914}|Default">
+  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" relfile="Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" line="7" column="1" />
+    <Breakpoint file="/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/Program.cs" relfile="Prototype_Design_Pattern_Prac2/Program.cs" line="9" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Prototype__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Prototype__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern__Prac2 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Object_Pool_Design_Pattern/Program.cs">
     <Files>
       <File FileName="Object_Pool_Design_Pattern/Program.cs" Line="9" Column="53" />
@@ -25,13 +27,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dilanozer/Projects/Creational_Patterns/Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" relfile="Abstract_Factory_Design_Pattern_CSharp_Example_2/Program.cs" line="7" column="1" />
-      <Breakpoint file="/Users/dilanozer/Projects/Creational_Patterns/Prototype_Design_Pattern_Prac2/Program.cs" relfile="Prototype_Design_Pattern_Prac2/Program.cs" line="9" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Singleton__Design__Pattern FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example__2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Factory__Method__Design__Pattern FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern FirstBuild="True" />
 </Properties>
