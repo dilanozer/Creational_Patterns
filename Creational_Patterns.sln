@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype_Design_Pattern", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype_Design_Pattern_Prac2", "Prototype_Design_Pattern_Prac2\Prototype_Design_Pattern_Prac2.csproj", "{F7C89BAA-00A4-4D15-B5A5-64D2B658571E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Design_Pattern", "Singleton_Design_Pattern\Singleton_Design_Pattern.csproj", "{D387315F-1F98-4769-8445-B39BE7025A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object_Pool_Design_Pattern", "Object_Pool_Design_Pattern\Object_Pool_Design_Pattern.csproj", "{EAC7B142-6C35-4BF5-9259-917F8F278914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{F7C89BAA-00A4-4D15-B5A5-64D2B658571E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7C89BAA-00A4-4D15-B5A5-64D2B658571E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7C89BAA-00A4-4D15-B5A5-64D2B658571E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D387315F-1F98-4769-8445-B39BE7025A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D387315F-1F98-4769-8445-B39BE7025A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D387315F-1F98-4769-8445-B39BE7025A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D387315F-1F98-4769-8445-B39BE7025A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC7B142-6C35-4BF5-9259-917F8F278914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC7B142-6C35-4BF5-9259-917F8F278914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC7B142-6C35-4BF5-9259-917F8F278914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC7B142-6C35-4BF5-9259-917F8F278914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
