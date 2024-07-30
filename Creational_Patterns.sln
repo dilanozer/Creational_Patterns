@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object_Pool_Design_Pattern"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object_Pool_Design_Pattern_Prac2", "Object_Pool_Design_Pattern_Prac2\Object_Pool_Design_Pattern_Prac2.csproj", "{FE939DEF-701F-443A-90DD-286BA37C085E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object_Pool_Design_Pattern_Prac3", "Object_Pool_Design_Pattern_Prac3\Object_Pool_Design_Pattern_Prac3.csproj", "{18327051-05C7-4829-9606-1F8895BF3A76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{FE939DEF-701F-443A-90DD-286BA37C085E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE939DEF-701F-443A-90DD-286BA37C085E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE939DEF-701F-443A-90DD-286BA37C085E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18327051-05C7-4829-9606-1F8895BF3A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18327051-05C7-4829-9606-1F8895BF3A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18327051-05C7-4829-9606-1F8895BF3A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18327051-05C7-4829-9606-1F8895BF3A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
