@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+Ohc8c/RIJeWWVm6it2G7riHwTp9dcWxp/PnFoUf6o5ldToUCeKwOvS1FNjAT0h2lFgaUxK8azM3G04ao9nR/g==",
+  "success": true,
+  "projectFilePath": "/Users/dilanozer/Projects/Creational_Patterns/Object_Pool_Design_Pattern_Prac4/Object_Pool_Design_Pattern_Prac4.csproj",
+  "expectedPackageFiles": [
+    "/Users/dilanozer/.nuget/packages/microsoft.extensions.objectpool/8.0.7/microsoft.extensions.objectpool.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{EAC7B142-6C35-4BF5-9259-917F8F278914}|Default">
+﻿<Properties StartupConfiguration="{18327051-05C7-4829-9606-1F8895BF3A76}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Singleton__Design__Pattern FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern__Prac2 FirstBuild="True" />
@@ -24,7 +24,8 @@
   <MonoDevelop.Ide.ItemProperties.Prototype__Design__Pattern__Prac2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern__Prac3 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern__Prac4 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Object__Pool__Design__Pattern__Prac3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Factory__Design__Pattern FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Abstract__Factory__Design__Pattern__CSharp__Example__2 PreferredExecutionTarget="MonoDevelop.Default" />
